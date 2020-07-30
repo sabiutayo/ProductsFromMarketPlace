@@ -15,5 +15,5 @@ public class OrderProduct {
     private Order order;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "product_id")
-    private List<Product> products;
+    private Product product;
 }
