@@ -40,13 +40,13 @@ values ('Ionut', '123', 'EMPLOYEE'),
 
 insert into product (product_name, price, quantity)
 values ('TV LCD', 1500, 50),
-       ('Smartphone ', 2500, 100),
+       ('Smartphone', 2500, 100),
        ('Laptop', 3500, 30),
        ('Microwave Owen', 300, 50),
        ('Washing Machine', 1500, 40),
        ('Refrigerator', 1200, 25),
        ('Tablet', 800, 200);
 
-  # drop schema market_place;
+#   drop schema market_place;
 #   drop table user_details;
 #   drop table product;
