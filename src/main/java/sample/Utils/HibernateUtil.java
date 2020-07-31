@@ -6,6 +6,8 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
+import sample.entity.Order;
+import sample.entity.OrderProduct;
 import sample.entity.Product;
 import sample.entity.User;
 
@@ -30,6 +32,8 @@ public class HibernateUtil {
             configuration.setProperties(settings);
             configuration.addAnnotatedClass(User.class);
             configuration.addAnnotatedClass(Product.class);
+            configuration.addAnnotatedClass(Order.class);
+            configuration.addAnnotatedClass(OrderProduct.class);
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                     .applySettings(configuration.getProperties()).build();
             sessionFactory = configuration.buildSessionFactory(serviceRegistry);

@@ -19,6 +19,5 @@ public class Product {
     @Column(name = "quantity", nullable = false)
     private int quantity;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "order_id")
-    private OrderProduct orderProduct;
+    private Order order;
 }
